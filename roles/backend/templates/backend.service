@@ -3,7 +3,7 @@ Description = Backend Service
 
 [Service]
 User=expense
-Environment=DB_HOST="mysql-dev.ankitguptarbr08.online"
+Environment=DB_HOST="mysql-{{env}}.ankitguptarbr08.online"
 ExecStart=/bin/node /app/index.js
 SyslogIdentifier=backend
 

@@ -53,7 +53,7 @@
     target: /app/schema/backend.sql
     login_user: root
     login_password: ExpenseApp@1
-    login_host: mysql-dev.ankitguptarbr08.online
+    login_host: mysql-{{env}}.ankitguptarbr08.online
 
 - name: Start Backend Service
   ansible.builtin.systemd_service:
