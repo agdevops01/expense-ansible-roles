@@ -29,16 +29,3 @@
     state: restarted
     name: nginx
     enabled: true
-
-
-
-- name: Installing MYSQL Server
-  ansible.builtin.dnf:
-    name: mysql-server
-    state: present
-
-- name: Start MySQL Service
-  ansible.builtin.systemd_service:
-    name: mysqld
-    state: restarted
-    enabled: true
