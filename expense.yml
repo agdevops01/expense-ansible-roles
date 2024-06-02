@@ -1,5 +1,5 @@
-- name: Frontend Playbook
+- name: Expense Project Playbook
   hosts: all
   become: true
   roles:
-    - frontend
+    - "{{ role_names}}"
